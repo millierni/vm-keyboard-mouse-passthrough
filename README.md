@@ -42,15 +42,16 @@
   ```
   sudo nano /etc/libvirt/qemu.conf
   ```
-  - Find and edit `cgroup_device_acl` to looks like
+  - Find, uncomment and edit `cgroup_device_acl` to looks like  
+  Replace `{keyboard_device_id}` and `{mouse_device_id}` by your mouse & keyboard device id
   ```
   cgroup_device_acl = [
           "/dev/null", "/dev/full", "/dev/zero", 
           "/dev/random", "/dev/urandom",
           "/dev/ptmx", "/dev/kvm", "/dev/kqemu",
           "/dev/rtc","/dev/hpet",
-          "/dev/input/by-id/KEYBOARD_NAME",
-          "/dev/input/by-id/MOUSE_NAME"
+          "/dev/input/by-id/{keyboard_device_id}",
+          "/dev/input/by-id/{mouse_device_id}"
   ]
   ```
 
