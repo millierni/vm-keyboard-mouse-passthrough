@@ -55,9 +55,8 @@
   ]
   ```
 
-  - Find and uncomment `user = "root"`
+  - Find `#user = "libvirt-qemu"`and add below
   ```
-  #user = "root"
   user = "root"
   ```
 - Restart `libvirtd`
