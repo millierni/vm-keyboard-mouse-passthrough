@@ -8,7 +8,7 @@
 - Test to know if it's the right keyboard
   - Replace `{keyboard_device_id}` by your keyboard device id
   ```
-  cat /dev/input/by-id/{keyboard_device_id}
+  sudo cat /dev/input/by-id/{keyboard_device_id}
   ```
 - Edit your virtual machine config
   - Replace `win10` by your vm name
