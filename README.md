@@ -55,7 +55,7 @@
   ]
   ```
 
-  - Find `#user = "libvirt-qemu"`and add below
+  - Find `#user = "libvirt-qemu"` and add below
   ```
   user = "root"
   ```
